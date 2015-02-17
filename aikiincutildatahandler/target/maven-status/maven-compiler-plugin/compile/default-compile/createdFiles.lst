@@ -1,0 +1,7 @@
+com\aikiinc\data\handler\DataLoaderDbUnit$DbUnitCommand.class
+com\aikiinc\data\handler\DataLoaderResourceBundle.class
+com\aikiinc\data\handler\DataLoaderResourceBundle$ResourceBundlerCommand.class
+com\aikiinc\data\handler\DataLoaderDbUnit.class
+com\aikiinc\data\handler\DataLoaderResourceBundle$ResourceBundleChain.class
+com\aikiinc\data\handler\Chain.class
+com\aikiinc\data\handler\DataLoaderDbUnit$DbUnitChain.class

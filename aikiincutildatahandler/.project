@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+  <name>data-handlers</name>
+  <comment>Aikiinc basic data handler which seeds an application data from POJO&apos;s (Plain Old Java Object) property file or DbUnit XML file.
+        What&apos;s so special about my approach? The data handler uses the Command and Command Chain Pattern. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
+  <projects/>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+    <buildCommand>
+      <name>org.eclipse.m2e.core.maven2Builder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+    <nature>org.eclipse.m2e.core.maven2Nature</nature>
+  </natures>
+</projectDescription>

@@ -1,0 +1,7 @@
+com\aikiinc\dbunit\test\base\DbUnitBaseTest.class
+com\aikiinc\util\jdbc\JDBCCloseUtil.class
+com\aikiinc\util\jdbc\JDBCUtil.class
+com\aikiinc\domain\sample\User.class
+com\aikiinc\util\jdbc\JDBCUtil$ConnectionInfo.class
+com\aikiinc\dbunit\test\base\DbUnitBaseTestException.class
+com\aikiinc\util\jdbc\JDBCUtilException.class

@@ -1,0 +1,4 @@
+com\aikiinc\data\handler\DataLoaderDbUnitTest.class
+com\aikiinc\test\domain\User.class
+com\aikiinc\data\handler\DataLoaderResourceBundleTest.class
+com\aikiinc\dbunit\test\base\DataSourceTest.class

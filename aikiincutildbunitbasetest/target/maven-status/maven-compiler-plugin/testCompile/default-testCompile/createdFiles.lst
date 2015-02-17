@@ -1,0 +1,4 @@
+com\aikiinc\dbunit\test\base\SessionFactoryTest.class
+com\aikiinc\util\jdbc\JDBCCloseUtilTest.class
+com\aikiinc\util\jdbc\JDBCUtilTest.class
+com\aikiinc\dbunit\test\base\DataSourceTest.class
