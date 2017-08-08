@@ -16,7 +16,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.aikiinc.data.handler.DataLoaderDbUnit;
 import com.aikiinc.data.handler.DataLoaderDbUnit.DbUnitChain;
 import com.aikiinc.dbunit.test.base.DbUnitBaseTest;
-import com.aikiinc.test.domain.User;
+import com.aikiinc.domain.sample.User;
 
 /**
  *
@@ -142,7 +142,7 @@ public class DataLoaderDbUnitTest extends DbUnitBaseTest {
 			// MySql kept showing 4 and not 8 - works fine with HSQL
 			//***
 			//Assert.assertEquals(8, data.size());
-			Assert.assertEquals(4, data.size());
+			Assert.assertEquals(8, data.size());
 			showDBData(data);
 
 			// Delete remaining 4 data rows

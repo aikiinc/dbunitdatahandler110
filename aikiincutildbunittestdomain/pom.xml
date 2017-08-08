@@ -2,9 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>data-handlers</artifactId>
+	<artifactId>dbunit-base-test-domain</artifactId>
 	<packaging>jar</packaging>
-	<name>AikiInc Basic Data Handlers</name>
+	<name>AikiInc DbUnit Base Test Configuration Domain</name>
+	<description>Real basic domain used to test configuration</description>
 
 	<parent>
 		<groupId>com.aikiinc</groupId>
@@ -16,22 +17,19 @@
 		<maven>3.2.1</maven>
 	</prerequisites>
 
-	<description>
-        Aikiinc basic data handler which seeds an application data from POJO's (Plain Old Java Object) property file or DbUnit XML file.
-        What's so special about my approach? The data handler uses the Command and Command Chain Pattern.
-    </description>
-
 
 	<properties>
+		<!-- Application settings -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<copyright.year>2015</copyright.year>
 
 		<!-- Database Default -->
 		<db.name>testdb</db.name>
-		<!-- Database dependency MYSQL setting -->
+		<!-- Database dependency HSQL setting -->
 		<jdbc.groupId>org.hsqldb</jdbc.groupId>
 		<jdbc.artifactId>hsqldb</jdbc.artifactId>
 		<jdbc.version>2.2.8</jdbc.version>
+
 
 		<!-- Dependencies Version -->
 		<junit.version>4.11</junit.version>
@@ -71,11 +69,10 @@
 		<jdbc.username>SA</jdbc.username>
 		<jdbc.password></jdbc.password>
 		<jdbc.validationQuery>SELECT 1 + 1</jdbc.validationQuery>
-
 	</properties>
 
 	<build>
-		<finalName>com-aikiinc-data-handlers-${project.version}</finalName>
+		<finalName>com-aikiinc-dbunit-base-test-${project.version}</finalName>
 		<defaultGoal>install</defaultGoal>
 		<plugins>
 			<plugin>
@@ -160,6 +157,7 @@
 			<artifactId>${jdbc.artifactId}</artifactId>
 			<version>${jdbc.version}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -336,16 +334,6 @@
 			<groupId>org.dbunit</groupId>
 			<artifactId>dbunit</artifactId>
 			<version>${dbunit.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.aikiinc</groupId>
-			<artifactId>dbunit-base-test</artifactId>
-			<version>1.1.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.aikiinc</groupId>
-			<artifactId>dbunit-base-test-domain</artifactId>
-			<version>1.1.0</version>
 		</dependency>
 	</dependencies>
 

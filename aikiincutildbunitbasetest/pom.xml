@@ -6,17 +6,17 @@
 	<packaging>jar</packaging>
 	<name>AikiInc DbUnit Base Test Configuration</name>
 
-    <parent>
-        <groupId>com.aikiinc</groupId>
-        <artifactId>data-handler-parent</artifactId>
-        <version>1.1.0</version>
-    </parent>
+	<parent>
+		<groupId>com.aikiinc</groupId>
+		<artifactId>data-handler-parent</artifactId>
+		<version>1.1.0</version>
+	</parent>
 
 	<prerequisites>
 		<maven>3.2.1</maven>
 	</prerequisites>
 
-    <description>
+	<description>
         Aikiinc basic test which provide configuration for latest SpringFramework, Hibernate and DbUnit application.
     </description>
 
@@ -27,7 +27,7 @@
 
 		<!-- Database Default -->
 		<db.name>testdb</db.name>
-		<!-- Database dependency MYSQL setting -->
+		<!-- Database dependency HSQL setting -->
 		<jdbc.groupId>org.hsqldb</jdbc.groupId>
 		<jdbc.artifactId>hsqldb</jdbc.artifactId>
 		<jdbc.version>2.2.8</jdbc.version>
@@ -60,24 +60,29 @@
 		<!-- **** Set Default DB Here. -->
 		<!-- **** Instead of providing -P for profile selection again and again 
 			**** -->
-		<!-- <dbunit.dataTypeFactoryName>org.hibernate.dialect.HSQLDialect</dbunit.dataTypeFactoryName> 
-			<dbunit.operation.type>CLEAN_INSERT</dbunit.operation.type> <hibernate.dialect>org.hibernate.dialect.HSQLDialect</hibernate.dialect> 
-			<jdbc.groupId>org.hsqldb</jdbc.groupId> <jdbc.artifactId>hsqldb</jdbc.artifactId> 
-			<jdbc.version>2.2.8</jdbc.version> <jdbc.driverClassName>org.hsqldb.jdbcDriver</jdbc.driverClassName> 
-			<jdbc.url>jdbc:hsqldb:file:hsqldbsetup/db/testdb</jdbc.url> <jdbc.username>SA</jdbc.username> 
-			<jdbc.password></jdbc.password> <jdbc.validationQuery>SELECT 1 + 1</jdbc.validationQuery> -->
+		<dbunit.dataTypeFactoryName>org.hibernate.dialect.HSQLDialect</dbunit.dataTypeFactoryName>
+		<dbunit.operation.type>CLEAN_INSERT</dbunit.operation.type>
+		<hibernate.dialect>org.hibernate.dialect.HSQLDialect</hibernate.dialect>
+		<jdbc.groupId>org.hsqldb</jdbc.groupId>
+		<jdbc.artifactId>hsqldb</jdbc.artifactId>
+		<jdbc.version>2.2.8</jdbc.version>
+		<jdbc.driverClassName>org.hsqldb.jdbcDriver</jdbc.driverClassName>
+		<jdbc.url>jdbc:hsqldb:file:hsqldbsetup/db/testdb</jdbc.url>
+		<jdbc.username>SA</jdbc.username>
+		<jdbc.password></jdbc.password>
+		<jdbc.validationQuery>SELECT 1 + 1</jdbc.validationQuery>
 	</properties>
 
 	<build>
 		<finalName>com-aikiinc-dbunit-base-test-${project.version}</finalName>
-        <defaultGoal>install</defaultGoal>
-        <plugins>
+		<defaultGoal>install</defaultGoal>
+		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -331,6 +336,11 @@
 			<groupId>org.dbunit</groupId>
 			<artifactId>dbunit</artifactId>
 			<version>${dbunit.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.aikiinc</groupId>
+			<artifactId>dbunit-base-test-domain</artifactId>
+			<version>1.1.0</version>
 		</dependency>
 	</dependencies>
 

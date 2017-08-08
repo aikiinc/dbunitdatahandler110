@@ -38,8 +38,8 @@ public class JDBCUtilTest extends DbUnitBaseTest {
 			JDBCUtil.ConnectionInfo info = JDBCUtil.getConnectionInfo(con);
 			Assert.assertNotNull(info);
 
-			assertMYSQL(info);
-			// assertHSQLDB(info);
+			//assertMYSQL(info);
+			assertHSQLDB(info);
 
 			JDBCCloseUtil.close(con);
 		} catch (Exception e) {
@@ -56,10 +56,11 @@ public class JDBCUtilTest extends DbUnitBaseTest {
 	}
 
 	private void assertHSQLDB(JDBCUtil.ConnectionInfo info) {
-		Assert.assertEquals("HSSQL", info.getDatabaseProductName());
+		Assert.assertEquals("HSQL Database Engine", info.getDatabaseProductName());
 		Assert.assertEquals("HSQL Database Engine Driver", info.getDriverName());
+		LOG.info(info.getURL());
 		Assert.assertTrue(info.getURL().contains(
-				"jdbc:hsqldb:file:target/hsql/db/testdb"));
+				"jdbc:hsqldb:file:hsqldbsetup/db/testdb"));
 		Assert.assertEquals("sa", info.getUserName().toLowerCase());
 	}
 

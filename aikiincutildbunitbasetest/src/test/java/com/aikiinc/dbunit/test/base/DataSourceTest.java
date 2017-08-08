@@ -17,7 +17,7 @@ import com.aikiinc.util.jdbc.JDBCUtil.ConnectionInfo;
  *
  * @Copyright (C) Aiki Innovations Inc 2013-2015 - http://www.aikiinc.com
  * @Author Philip Jahmani Chauvet.
- * @Dated Sep 23, 2013
+ * @Dated Sep 23, 2013 - Aug 07, 2017
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "classpath:applicationContext-connection.xml" })

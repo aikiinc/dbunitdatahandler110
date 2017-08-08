@@ -27,8 +27,8 @@ import com.aikiinc.util.jdbc.JDBCUtil;
  * @See the sample test/resources/applicationContext-connection.xml
  *
  * @Copyright (C) Aiki Innovations Inc 2013-2015 - http://www.aikiinc.com
- * @Author Author: Philip Jahmani Chauvet.
- * @Dated Sep 23, 2013
+ * @Author: Philip Jahmani Chauvet.
+ * @Dated Sep 23, 2013 - Aug 07, 2017
  */
 
 public class DbUnitBaseTest {

@@ -3,6 +3,6 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
 	<session-factory>
-		<mapping class="com.aikiinc.test.domain.User" />
+		<mapping class="com.aikiinc.domain.sample.User" />
 	</session-factory>
 </hibernate-configuration>

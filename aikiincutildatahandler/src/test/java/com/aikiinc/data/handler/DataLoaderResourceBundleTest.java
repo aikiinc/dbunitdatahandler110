@@ -7,7 +7,7 @@ import org.apache.log4j.Logger;
 import org.junit.Test;
 
 import com.aikiinc.data.handler.DataLoaderResourceBundle;
-import com.aikiinc.test.domain.User;
+import com.aikiinc.domain.sample.User;
 
 /**
  * @Copyright (C) Aiki Innovations Inc 2013-2015 - http://www.aikiinc.com

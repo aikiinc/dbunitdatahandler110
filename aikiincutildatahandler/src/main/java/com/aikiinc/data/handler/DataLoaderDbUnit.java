@@ -26,7 +26,7 @@ public class DataLoaderDbUnit extends DataLoaderResourceBundle {
 	private static IDatabaseConnection con;
 
 	/**
-	 * Inititialize the chain of command with an entity object
+	 * Initialize the chain of command with an entity object
 	 * 
 	 * @param jdbccon
 	 *            The JDBC connection
@@ -36,9 +36,7 @@ public class DataLoaderDbUnit extends DataLoaderResourceBundle {
 	 * @return The DBUnitChain of commands
 	 */
 	public static DbUnitChain init(java.sql.Connection jdbccon, String file) {
-		String filepath = DataLoaderResourceBundle.class.getClass()
-				.getResource("/").getPath()
-				+ file;
+		String filepath = DataLoaderResourceBundle.class.getClass().getResource("/").getPath() + file;
 
 		return new DbUnitCommand(jdbccon, filepath);
 	}
